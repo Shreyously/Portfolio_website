@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Shrey Ghodke | 21-year-old Developer, Programmer, Designer, Guitarist; A motivated, innovative colleague and leader with a strong will to learn, develop, and acquire new skills.">
+    <meta name="theme-color" content="#8D24DF"/>
+    <link rel="icon" href="/assets/images/Home-Purple.svg" type="image/svg+xml">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href='css/phone.css' />
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        var homeSocialLinks = document.querySelectorAll("#home_social a");
+        homeSocialLinks.forEach(function(link) {
+          link.setAttribute("target", "_blank");
+        });
+      });
+      </script>
+    <script src="/js/mode.js"></script>
+    <title>Home</title>
+</head>
+<body style="background-image: url(/assets/images/BG-Home-min.webp); background-size: cover;">
+    <div class="home-page">
+        <!-- navbar -->
+        <div class = "navbar">
+            <ul>
+                <li id="active"><a href="index.html" title="Home | Press Key 1"><img src="/assets/images/Home-Purple.svg" id="home" alt="Shrey Ghodke | Home Logo"></a></li>
+                <li><a href="/html/project.html" title="Projects | Press Key 2"><img src="/assets/images/Projects.svg" id = "projects"  alt="Shrey Ghodke | Project Logo"></a></li>
+                <li><a href="/html/blog.html" title="Blog | Press Key 3"><img src="/assets/images/Blog.svg" id = "blog"  alt="Shrey Ghodke | Blog Logo"></a></li>
+                <li><a href="/html/contact.html" title="Connect | Press Key 4"><img src="/assets/images/Connect.svg" id = "connect"  alt="Shrey Ghodke | Contact Logo"></a></li>
+            </ul>
+        </div>
+    
+        <!-- home left  -->
+        <div class = "home_left">
+            
+            <img src = "/assets/images/DP.webp" id = "DP"  alt="Shrey Ghodke | Self Image" style="border-radius: 100%; width: 90%; ">
+            
+
+            <div class="home_tagline" id="home_tagline">
+                <img id = "tagline_logo" src="/assets/images/Icon-CCPS.jpeg" alt="VCET Logo" style="scale: 1.1;">
+                <p>B.E - Artificial Intelligence and Data Science @ <a href="/html/blog.html#vit" style="text-decoration: none;">VCET </a></p>
+            </div>
+            <div class = "home_social" id = "home_social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/shrey-ghodke/" title="LinkedIn"><img src="/assets/images/LinkedIn.png"  alt="Shrey Ghodke | LinkedIn Logo" id="LinkedIn"></a></li>
+                    <li><a href="https://github.com/Shreyously" title="GitHub"><img src="/assets/images/GitHub.png"  alt="Shrey Ghodke | GitHub Logo" id="GitHub"></a></li>
+                    <li><a href = "https://drive.google.com/file/d/1H6bpmI6k2_UoEmABR44AnXTb5EE-EsP0/view" title="CV | Resume"><img src="/assets/images/CV.svg" alt="Shrey Ghodke | Resume Logo" id="resume"></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- home right  -->
+        <div class="home_right">
+            <div class="toggle" id="top_right">
+                <input type="checkbox" id="toggle" class="toggle--checkbox" onclick="change()"/>
+                <label for="toggle" class="toggle--label" title="Toggle | Press Key t">  
+                    <span class="toggle--label-background"></span>
+                </label>
+            </div>
+            <h2>Hey There!&#128075;</h2>
+            <h1>I'm<strong id="name"> Shrey Ghodke</strong><sup id="pronouns"> (He/Him)</sup></h1>
+            <p>I’m a <span id="age"></span>-year-old Developer and Programmer with a passion for learning, innovating, and creating impactful solutions. A motivated and collaborative individual, I’m always eager to tackle new challenges and lead projects to success.
+                <br><br>
+                Currently involved in numerous projects including, Web Development, ML applications, System Design and much more. I'd love it if you could head on to the <a href="/html/project.html">projects page</a>, take a look at the various projects I've been working on and, share your reviews with me!  
+                <br><br>
+                I'm experienced in various programming languages - Java, JavaScript, TypeScript, HTML, CSS, SQL and more. I’m passionate about computer sciences and always eager to collaborate on new projects, so free to <a href="/html/contact.html">connect</a> with me.
+            </p>
+            <script>
+                var dob = new Date("02/01/2003");  
+                var month_diff = Date.now() - dob.getTime();  
+                var age_dt = new Date(month_diff);   
+                var year = age_dt.getUTCFullYear();  
+                var age = Math.abs(year - 1970);  
+                document.getElementById("age").innerHTML = age;
+            </script>
+        </div>
+    </div>
+
+    <!-- helpbox -->
+    <div class="helpbox" id="helpbox">
+        <div class="helpbox_content" id="helpbox_content">
+          <h1>Keyboard Combos <b id="heading_bold">/</b></h1>  
+          <p>Navigate the Menu-NavBar<br><b>1</b><b>2</b><b>3</b><b>4</b><br><br>Toggle Light/Dark Mode<br><b>t</b><br><br>Go Back/Next (Projects & Blog)<br><b>⬅</b><b>➡</b><br><br>Scroll Up/Down (Projects & Blog)<br><b>⬆</b><b>⬇</b></p>
+        </div>
+    </div>
+
+    <!-- popup -->
+    <div class="popup" id="popup">
+        <div class="popup_content" id="popup_content">
+          <h1>&#128064; Pssst</h1>  
+          <p>Press the <b>/</b> Forward slash key</p>
+        </div>
+    </div>
+
+</body>
+</html>

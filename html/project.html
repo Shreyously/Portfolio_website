@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shrey Ghodke | Currently involved in numerous projects including, Artificial Intelligence and Machine Learning, Application and Web Development, Internet of Things (IoT), Hardware Projects, Graphic Designing and much more.">
+    <meta name="theme-color" content="#8D24DF"/>
+    <link rel="icon" href="/assets/images/Projects-Purple.svg" type="image/svg+xml">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/phone.css" />
+    <script src="/js/mode.js"></script>
+    <title>Projects</title>
+</head>
+<body style="background-image: url(/assets/images/BG-Projects-min.webp); background-size: cover;">
+    <!-- navbar -->
+    <div class = "navbar">
+        <ul>
+            <li><a href="/index.html"><img src="/assets/images/Home.svg" title="Home | Press Key 1" id="home" alt="Shrey Ghodke | Home Logo"></a></li>
+            <li id="active"><a href="project.html" title="Projects | Press Key 2"><img src="/assets/images/Projects-Purple.svg" id="projects"  alt="Shrey Ghodke | Projects Logo"></a></li>
+            <li><a href="blog.html" title="Blog | Press Key 3"><img src="/assets/images/Blog.svg" id="blog"  alt="Shrey Ghodke | Blog Logo"></a></li>
+            <li><a href="contact.html" title="Connect | Press Key 4"><img src="/assets/images/Connect.svg" id="connect"  alt="Shrey Ghodke | Contact Logo"></a></li>
+        </ul>
+    </div>
+    
+    <!-- pane -->
+    <button type="button" id="menu" onclick="project_menu()">☰</button>
+    <div class="pane" id="pane">
+        <div class="heading">
+            <h1>Projects</h1><h3>Total: <span id="total" style="font-weight: 600;"></span></h3>
+        </div>
+        <div class="pane-project-container" id="pane_container">
+           
+            <div class="pane-project" id="cynthia">
+                <img src="/assets/images/Icon-Cynthia.svg"  alt="Shrey Ghodke | Logo">
+                <h2>Blog App</h2>
+            </div>
+            <div class="pane-project" id="rtbt">
+                <img src="/assets/images/Icon-Braille.svg"  alt="Shrey Ghodke |  Logo">
+                <h2>Job Portal</h2>
+            </div>
+           
+            
+            <div class="pane-project" id="fall">
+                <img src="/assets/images/Icon-Fall.svg"  alt="Shrey Ghodke | ">
+                <h2>Github Profile Search App</h2>
+            </div>
+            
+            <div class="pane-project" id="ueba">
+                <img src="/assets/images/Icon-UEBA.svg"  alt="Shrey Ghodke | ">
+                <h2>PayEase</h2>
+            </div>
+            
+            <div class="pane-project" id="spiralcosmos">
+                <img src="/assets/images/Icon-SpiralCosmos.svg"  alt="Shrey Ghodke | ">
+                <h2>Social Sphere</h2>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- project detail -->
+    <div class="project-detail" id="project-detail">
+        <div class="nav-buttons">
+            <button id="back" title="Back | Press Left Arrow Key" onclick="back()">Back</button>
+            <button id="next" title="Next | Press Right Arrow Key" onclick="next()">Next</button>
+        </div>
+        <img src="/assets/images/Main-EdTech.svg" alt="" id="main-image"  alt="Shrey Ghodke | Project Main Image">
+        <h1 id = "title">Click on any project to know more</h1>
+        <h3 id = "byline"> On mobile devices, tap next/previous to navigate </h3>
+    </div>
+
+    <!-- helpbox -->
+    <div class="helpbox" id="helpbox">
+        <div class="helpbox_content" id="helpbox_content">
+          <h1>Keyboard Combos <b id="heading_bold">/</b></h1>  
+          <p>Navigate the Menu-NavBar<br><b>1</b><b>2</b><b>3</b><b>4</b><br><br>Toggle Light/Dark Mode<br><b>t</b><br><br>Go Back/Next (Projects & Blog)<br><b>⬅</b><b>➡</b><br><br>Scroll Up/Down (Projects & Blog)<br><b>⬆</b><b>⬇</b></p>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of the project menu pane.
+         * Logs the current visibility state to the console.
+         */
+        function project_menu() 
+        {
+            // Get the 'pane' element by its ID
+            let toggle = document.getElementById("pane");
+
+            // Check if the pane is currently visible
+            if (toggle.style.visibility == "visible") 
+            {
+                // Hide the pane
+                toggle.style.visibility = "hidden";
+                console.log(toggle.style.visibility); // Log the visibility state
+            }
+            else {                              
+                // Show the pane
+                toggle.style.visibility = "visible";
+                console.log(toggle.style.visibility); // Log the visibility state
+            }
+        }
+
+        elements = document.getElementsByClassName("pane-project");
+        document.getElementById("total").innerHTML = elements.length;
+
+    </script>
+    <script src="/js/project.js"></script>
+</body>     
+</html>

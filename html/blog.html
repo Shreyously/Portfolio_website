@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shrey Ghodke .">
+    <meta name="theme-color" content="#8D24DF"/>
+    <link rel="icon" href="/assets/images/Blog-Purple.svg" type="image/svg+xml">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/phone.css" />
+    <script src="/js/mode.js"></script>
+    <title>Loading ...</title>
+</head>
+<body style="background-image: url(/assets/images/BG-Blog-min.webp); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <!-- navbar -->
+     
+    <div class = "navbar">
+        <ul>
+            <li><a href="/index.html" title="Home | Press Key 1"><img src="/assets/images/Home.svg" id="home"  alt="Shrey Ghodke | Home Logo"></a></li>
+            <li><a href="project.html" title="Projects | Press Key 2"><img src="/assets/images/Projects.svg" id="projects"  alt="Shrey Ghodke | Project Logo"></a></li>
+            <li id="active"><a href="blog.html" title="Blog | Press Key 3"><img src="/assets/images/Blog-Purple.svg"  alt="Shrey Ghodke | Blog Logo"></a></li>
+            <li><a href="contact.html" title="Connect | Press Key 4"><img src="/assets/images/Connect.svg" id="connect"  alt="Shrey Ghodke | Contact Logo"></a></li>
+        </ul>
+    
+    </div>
+    
+    <!-- Update the SVG container -->
+<div class="construction-container">
+  <svg class="construction-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+      <!-- Tools -->
+      <g transform="translate(300,200) rotate(-30)">
+          <rect x="-20" y="-10" width="150" height="20" fill="#8D24DF" rx="5"/>
+          <circle cx="120" cy="0" r="25" fill="#8D24DF"/>
+          <circle cx="120" cy="0" r="15" fill="#333"/>
+      </g>
+      
+      <!-- Geometric decorations -->
+      <g transform="translate(400,180)">
+          <polygon points="0,0 20,-40 40,0" fill="none" stroke="#8D24DF" stroke-width="4">
+              <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+          </polygon>
+          <polygon points="-60,20 -40,-20 -20,20" fill="none" stroke="#8D24DF" stroke-width="4">
+              <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+          </polygon>
+          <polygon points="20,20 40,-20 60,20" fill="none" stroke="#8D24DF" stroke-width="4">
+              <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+          </polygon>
+      </g>
+      
+      <!-- Text -->
+      <text x="400" y="250" font-family="Arial, sans-serif" font-size="40" fill="#8D24DF" text-anchor="middle" font-weight="bold">Under Construction</text>
+      <text x="400" y="290" font-family="Arial, sans-serif" font-size="20" fill="#666" text-anchor="middle">Coming Soon</text>
+      
+      <!-- Animated gears -->
+      <g transform="translate(250,200)">
+          <path d="M0 -25L7 -7L25 0L7 7L0 25L-7 7L-25 0L-7 -7Z" fill="#8D24DF">
+              <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+          </path>
+      </g>
+      <g transform="translate(550,200)">
+          <path d="M0 -25L7 -7L25 0L7 7L0 25L-7 7L-25 0L-7 -7Z" fill="#8D24DF">
+              <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="8s" repeatCount="indefinite"/>
+          </path>
+      </g>
+  </svg>
+</div>
+    
+
+    <!-- helpbox -->
+    <div class="helpbox" id="helpbox">
+        <div class="helpbox_content" id="helpbox_content">
+          <h1>Keyboard Combos <b id="heading_bold">/</b></h1>  
+          <p>Navigate the Menu-NavBar<br><b>1</b><b>2</b><b>3</b><b>4</b><br><br>Toggle Light/Dark Mode<br><b>t</b><br><br>Go Back/Next (Projects & Blog)<br><b>⬅</b><b>➡</b><br><br>Scroll Up/Down (Projects & Blog)<br><b>⬆</b><b>⬇</b></p>
+        </div>
+    </div>
+
+    
+        
+    <script src="/js/blog.js"></script>
+</body>
+</html>
